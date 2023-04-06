@@ -652,8 +652,14 @@ img {
     margin-left: auto;
     cursor: pointer;
 }
+.svg-modal {
+    fill: var(--color-background-main);
+}
 .button-modal:active {
     background-color: var(--color-background-btn);
+    
+}
+.svg-modal:active{
     fill: var(--color-white);
 }
 .is-hidden {
