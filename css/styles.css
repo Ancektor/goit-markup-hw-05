@@ -656,8 +656,7 @@ img {
     fill: var(--color-background-main);
 }
 .button-modal:active {
-    background-color: var(--color-background-btn);
-    
+    background-color: var(--color-background-btn);    
 }
 .svg-modal:active{
     fill: var(--color-white);
