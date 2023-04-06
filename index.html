@@ -21,9 +21,9 @@
                     Web<span class="span-logo">Studio</span>
                 </a>                
                 <ul class="header-nav list">
-                    <li><a href="./index.html" class="header-link studio link">Studio</a></li>
-                    <li><a href="./portfolio.html" class="header-link portfolio link">Portfolio</a></li>
-                    <li><a href="" class="header-link contacts link">Contacts</a></li>
+                    <li><a href="./index.html" class="header-link current link">Studio</a></li>
+                    <li><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
+                    <li><a href="" class="header-link link">Contacts</a></li>
                 </ul>
             </nav>
             <address class="adress">
@@ -38,7 +38,7 @@
         <section class="hero link list">
             <div class="conteiner">
                     <h1 class="hero-title list">Effective Solutions for Your Business</h1>                              
-                    <button type="button" class="hero-button">Order Service</button>                    
+                    <button data-modal-open type="button" class="hero-button">Order Service</button>                    
                 </div>
         </section>
         <section class="section-two">
@@ -333,6 +333,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-modal" data-modal-close type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="none">
+                    <path fill="#2E2F42"
+                        d="M8 .806 7.194 0 4 3.194.806 0 0 .806 3.194 4 0 7.194.806 8 4 4.806 7.194 8 8 7.194 4.806 4 8 .806Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
  </body>
  </html>
