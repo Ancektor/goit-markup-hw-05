@@ -385,6 +385,7 @@ select {
 }
 .customers-logo {
     fill: var(--color-costumers);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-svg {
     border: 1px solid var(--color-costumers);
@@ -394,8 +395,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-svg:hover,
 .customers-svg:focus {
@@ -601,12 +601,12 @@ select {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 408px;
     min-height: 576px;
-    padding: 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
 .button-modal {
+    position: absolute;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -615,12 +615,14 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    margin-left: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    top: 24px;
+    right: 24px;
     cursor: pointer;
 }
 .svg-modal {
     fill: var(--color-background-main);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal:active {
     background-color: var(--color-background-btn);    
